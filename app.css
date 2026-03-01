@@ -1,0 +1,27 @@
+body{
+    background-color: #36040cec;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.ninani {
+  width: 200px;
+}
+.profile h2 {
+    color: white;
+}
+.profile h4 {
+    color: white;
+    transform: translateY(-12px);
+}
+.biodata {
+    background: linear-gradient(#fff 0%, #9b4453ce 50%, #36040cec 87%);
+    padding-bottom: 200px;
+}
+.achievement h1 {
+ color: white;
+}
