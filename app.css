@@ -22,6 +22,56 @@ body{
     background: linear-gradient(#fff 0%, #9b4453ce 50%, #36040cec 87%);
     padding-bottom: 200px;
 }
-.achievement h1 {
+.sedikitTentangku h1 {
  color: white;
+}
+.container-bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8dvb 100px;
+    flex-wrap: wrap; 
+    gap: 40px ; 
+    max-width: 1100px;
+    margin:auto;
+}
+
+.bio-card {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    flex: 1 1 300px; 
+    max-width: 400px; 
+}
+
+.img-wrapper {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    transition: transform 0.3s ease;
+}
+
+.img-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+.emoji-effect {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 30px;
+    animation: popEmoji 0.6s ease forwards;
+}
+
+@keyframes popEmoji {
+    0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+    50% { transform: translate(-50%, -50%) scale(1.3); opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
 }
