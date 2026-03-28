@@ -1,0 +1,77 @@
+body {
+    background: rgb(95, 95, 95); /*warna background*/
+    display: flex; 
+    justify-content: center; /* tengah horizontal */
+    align-items: center; /* tengah vertikal */
+    height: 100vh; /* full layar */
+    font-family: 'Times New Roman', Times, serif; /* font */
+}
+
+/*wadah kalkulator*/
+.calculator {
+    width: 260px; /*lebar*/
+    background: #1b0000; /*warna*/
+    padding: 15px; /*jarak dalam*/
+    border-radius: 15px; /*sudut bulat*/
+}
+
+/*layar*/
+.display {
+    background: #111;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/*isi layar*/
+#display {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 28px;
+    text-align: right; /*angka ke kanan*/
+}
+
+/*grid tombol*/
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*4 kolom*/
+    gap: 10px; /*jarak*/
+}
+
+/*tombol*/
+button {
+    height: 55px;
+    border-radius: 50%; /*bulat*/
+    border: none;
+    font-size: 18px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+/*efek hover*/
+button:hover {
+    background: #555;
+}
+
+/*tombol abu*/
+.gray {
+    background: #a5a5a5;
+    color: black;
+}
+
+/*tombol operator*/
+.orange {
+    background: #ff9500;
+}
+
+/*tombol 0 panjang*/
+.zero {
+    grid-column: span 2; /*2 kolom*/
+    border-radius: 30px;
+    text-align: center;
+    padding-left: 20px;
+}

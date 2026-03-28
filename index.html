@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> <!--biar karakter terbaca-->
+    <title>kalkulator</title> <!--judul tab-->
+    <link rel="stylesheet" href="style.css"> <!--hubungkan css-->
+</head>
+<body>
+
+<!--wadah utama kalkulator-->
+<div class="calculator">
+
+    <!--tampilan-->
+    <div class="display">
+        <input type="text" id="display" disabled> <!--tempat angka-->
+    </div>
+
+    <!--tombol-->
+    <div class="buttons">
+
+        <!-- baris 1 -->
+        <button class="gray" onclick="clearDisplay()">c</button> <!--hapus semua-->
+        <button class="gray" onclick="percent()">%</button> <!--persen-->
+        <button class="gray" onclick="toggleSign()">+/-</button> <!--ubah tanda-->
+        <button class="orange" onclick="add('/')">÷</button> <!--bagi-->
+
+        <!--baris 2-->
+        <button onclick="add('7')">7</button> <!--tambah 7-->
+        <button onclick="add('8')">8</button>
+        <button onclick="add('9')">9</button>
+        <button class="orange" onclick="add('*')">×</button> <!--kali-->
+
+        <!--baris 3-->
+        <button onclick="add('4')">4</button>
+        <button onclick="add('5')">5</button>
+        <button onclick="add('6')">6</button>
+        <button class="orange" onclick="add('-')">-</button> <!--kurang-->
+
+        <!--baris 4-->
+        <button onclick="add('1')">1</button>
+        <button onclick="add('2')">2</button>
+        <button onclick="add('3')">3</button>
+        <button class="orange" onclick="add('+')">+</button> <!--tambah-->
+
+        <!--baris 5-->
+        <button class="zero" onclick="add('0')">0</button> <!--nol panjang-->
+        <button onclick="add('.')">.</button> <!--desimal-->
+        <button class="orange" onclick="hitung()">=</button> <!--hasil-->
+
+    </div>
+
+</div>
+
+<script src="script.js"></script> <!--hubungkan js-->
+</body>
+</html>
